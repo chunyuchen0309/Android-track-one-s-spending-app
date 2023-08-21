@@ -1,5 +1,3 @@
-# Android-APP
-
 # Android記帳手機程式
 
 ### 功能:
