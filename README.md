@@ -19,4 +19,9 @@
 **帳目查詢以及存款查詢**:檢視所有花費及存款並提供用份篩選、使用者姓名篩選以及類別篩選  
 **帳戶設定**:設定個人訊息並提供切換帳號功能  
 
+詳細功能頁面展示
+***
+![2](https://github.com/chunyuchen0309/Android-APP/assets/134032677/10643baf-d08d-4613-aa99-d448f1d41680)![3](https://github.com/chunyuchen0309/Android-APP/assets/134032677/d3fadc0d-56c2-4d45-83ad-7ab318f9cefd)
+![4](https://github.com/chunyuchen0309/Android-APP/assets/134032677/32dac4a3-34df-47f6-8f7c-6f133605166d)![手機程式1](https://github.com/chunyuchen0309/Android-APP/assets/134032677/6f23e93d-b194-4a51-a83c-b234e8442ef4)
+
 
