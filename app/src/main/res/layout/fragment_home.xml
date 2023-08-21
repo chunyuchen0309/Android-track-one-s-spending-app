@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="TextView"
+            android:textColor="#697EF1"
+            android:textSize="20sp"
+            android:textStyle="normal|bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/save_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="292dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/save_send"
+            android:background="@drawable/home_btn_send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="72dp"
+            android:gravity="center|center_vertical"
+            android:hint="選擇的日期"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <EditText
+            android:id="@+id/deposit"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/home_fg_edt"
+            android:ems="10"
+            android:hint="記帳金額:"
+            android:inputType="number"
+            android:paddingStart="15dp"
+            android:textColorHint="#757575"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/calendar"
+            android:focusableInTouchMode="true"
+            android:focusedMonthDateColor="#FD0000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Spinner
+            android:id="@+id/spinner_select"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deposit"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/edt_detail"
+            android:layout_width="159dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/home_fg_edt"
+            android:ems="10"
+            android:hint="註記"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingStart="15dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="350dp"
+            android:layout_height="59dp"
+            android:background="#6163BFCA"
+            android:src="@mipmap/note"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:text="記帳/存錢"
+            android:textAllCaps="false"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_save"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/spinner"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deposit"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

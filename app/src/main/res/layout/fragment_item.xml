@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:backgroundTint="#65CED6FB"
+    android:backgroundTintMode="src_atop"
+    android:orientation="horizontal"
+    android:textAlignment="inherit">
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="112dp"
+        android:layout_height="51dp"
+        android:gravity="center_vertical"
+        android:text="@string/out_name"
+        android:textAllCaps="false"
+        android:textColor="#48559C"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail_money"
+        android:layout_width="130dp"
+        android:layout_height="51dp"
+        android:gravity="center_vertical"
+        android:text="@string/out_spend"
+        android:textColor="#C6BF4E46"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="@string/out_date"
+        android:textColor="#616161"
+        android:textSize="12sp" />
+</LinearLayout>

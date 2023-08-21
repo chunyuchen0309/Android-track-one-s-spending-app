@@ -1,0 +1,9 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+</resources>
